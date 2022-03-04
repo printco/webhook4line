@@ -12,9 +12,10 @@
 			var displayName = profile.displayName;
 			var owner = "แล่ครับ";
 			if( displayName === owner ){
-				window.location.href="https://lottiefiles.com/5188-gift-box-opening-animation";
+				document.getElementById("msg").innerHTML = "<img src='gift-box-opening-animation.gif' />"
 			} else {
-				$("#msg").text("ของขวัญเฉพาะ " + owner + "เท่านั่น");
+				console.log("ok");
+				document.getElementById("msg").textContent = ("ของขวัญเฉพาะ " + owner + " เท่านั่น");
 			}
 		}).catch(err => console.error(err));
     }
@@ -27,5 +28,6 @@
     }, err => console.error(err.code, error.message));
   </script>
   <div id="msg"></div>
+  <div id="animation"></div>
 </body>
 </html>
