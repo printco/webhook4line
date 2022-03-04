@@ -4,6 +4,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Happy Birth Day</title>
   <script src="https://static.line-scdn.net/liff/edge/versions/2.9.0/sdk.js"></script>
+  <style>
+img {
+	width:500px;
+	height:500px;
+}
+  </style>
 </head>
 <body>
   <script>
